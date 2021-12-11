@@ -1,4 +1,4 @@
-# Szólánc (Word Chain) Helper
+# Szólánc (Word Chain) Helper [![Pylint](https://github.com/kasztp/Szolanc/actions/workflows/pylint.yml/badge.svg)](https://github.com/kasztp/Szolanc/actions/workflows/pylint.yml)
 
 Helper (or cheating if you'd like) tool for the "Szólánc" (Word Chain) word game .
 It is based on my previous Letterpress Helper pet project with Flask, Bootstrap & FontAwesome
