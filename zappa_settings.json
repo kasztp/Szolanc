@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "szolanc.app",
+        "profile_name": "default",
+        "project_name": "szolanc",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-szolanc",
+        "aws_region": "eu-central-1"
+    }
+}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card pt-3 pl-3 mx-auto" style="width: 80%; margin: 50px;">
+    <h1 class="card-header m-3" style="width: 95%; margin: 50px;">Enter the starting and ending Letters here!</h1>
+    <div class="form-group m-3">
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <p>
+                    {{ form.language.label }}<br>
+                    {{ form.language }}
+                    {% for error in form.language.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+            </p>
+            <p>
+                {{ form.own_letterset.label }}<br>
+                {{ form.own_letterset(size=25) }}
+                {% for error in form.own_letterset.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </div>
+</div>
+{% endblock %}
